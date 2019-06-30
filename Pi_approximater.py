@@ -28,7 +28,9 @@ for x in range(0,10000):
  count=count+1
  if distance_from_center <= radius:
      count_inside_circle=count_inside_circle+1
- pi_approximation=round(area_of_rectangle*(count_inside_circle/(count)),4)  
+    
+ ratio=count_inside_circle/(count)       
+ pi_approximation=round(area_of_rectangle*(ratio),4)  
  plt.pause(0.2)
  str_pi_approx=str(pi_approximation)
  str_inside_circle=str(count_inside_circle)
